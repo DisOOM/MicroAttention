@@ -77,6 +77,8 @@ class MicroAttention(nn.Module):
         
         return self.out_proj(diff)
 ```
-
+![Comparison Figure](https://github.com/DisOOM/MicroAttention/blob/main/Comparison%20Figure.png)
+The three models in the figure were trained on the TinyStories dataset with autoregression and a max_seq_len of 512, with MicroAttention taking a p-value of 50, which can be seen to be effective in mitigating the long-term dependency problem and obtaining a Transformer-style descent curve
+(but of course, don't expect it to have a Transformer's full performance)
 ---
 **Note**: This is an after-school experimental implementation aimed at exploring lightweight attention mechanisms. All feedback and discussions are welcome!
