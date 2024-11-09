@@ -39,7 +39,7 @@ The differential computation serves multiple purposes:
 Here's the complete implementation of MicroAttention:
 
 ```python
-class Attention(nn.Module):
+class MicroAttention(nn.Module):
     def __init__(self, args: ModelArgs):
         super().__init__()
         self.dim = args.dim
